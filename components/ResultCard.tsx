@@ -16,8 +16,11 @@ const ResultCard: React.FC<ResultCardProps> = ({
   return (
     <div className='bg-gray-50 rounded-lg h-[70vh] sm:w-full w-[100%] px-10 py-0 flex justify-center items-center'>
       <div className='gap-10'>
-        {!children && 'Your results will show here'}
-        {error && 'An error occurred'}
+        <div className='flex flex-col justify-center items-center'>
+          {!children && 'Your results will show here'}
+          {error && 'An error occurred'}
+        </div>
+
         {loading && (
           <div className='flex justify-center items-center py-3 mt-5'>
             <SyncLoader color='#38b2ac' loading={loading} />
