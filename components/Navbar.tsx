@@ -106,6 +106,13 @@ export default function Navbar() {
             className='block text-white hover:text-gray-200 px-3 py-2 rounded-md text-lg font-medium'>
             Image Generator
           </Link>
+          <SignedIn>
+            <SignOutButton>
+              <span className='cursor-pointer text-white hover:text-gray-200 px-3 py-2 rounded-md text-lg font-normal'>
+                Sign Out
+              </span>
+            </SignOutButton>
+          </SignedIn>
         </div>
       </div>
     </nav>

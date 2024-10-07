@@ -39,6 +39,7 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <Navbar />
           {children}
+
           {/* Footer Section */}
           <footer className='bg-teal-800 text-white py-6'>
             <div className='container mx-auto text-center px-4'>
